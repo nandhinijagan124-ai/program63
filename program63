@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+struct BankAccount {
+    int accountNumber;
+    char name[50];
+    float balance;
+};
+
+int main() {
+    struct BankAccount acc;
+    int choice;
+    float amount;
+
+    // Input initial account details
+    printf("Enter Account Number: ");
+    scanf("%d", &acc.accountNumber);
+
+    printf("Enter Account Holder Name: ");
+    scanf(" %[^\n]", acc.name);
